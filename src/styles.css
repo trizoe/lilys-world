@@ -132,6 +132,7 @@ input, textarea {
   position: absolute;
   left: 0;
   top: 1.2rem;
+  z-index: 2;
   background: white;
   border-radius: 999px;
   padding: 0.5rem 0.9rem 0.5rem 0.7rem;

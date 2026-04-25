@@ -98,7 +98,7 @@ export default function App() {
     <div className="app">
       <Header page={page} onBack={() => setPage('home')} />
       {page === 'home'     && <Home onNavigate={setPage} />}
-      {page === 'math'     && <Math />}
+      {page === 'math'     && <MathPage />}
       {page === 'spelling' && <Spelling />}
       {page === 'geo'      && <Geography />}
       {page === 'todo'     && <Todo />}
@@ -170,7 +170,7 @@ function Home({ onNavigate }) {
 
 // ========== MATH ==========
 
-function Math() {
+function MathPage() {
   const [op, setOp] = useState('+')
   const [streak, setStreak] = useLocalState('lily_math_streak', 0)
   const [question, setQuestion] = useState(() => makeQuestion('+'))
